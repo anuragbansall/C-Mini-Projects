@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    unsigned char header[4];
+    unsigned char header[4]; // buffer to hold the first four bytes of the file
 
     if (fread(header, 1, 4, file) < 4)
     {
